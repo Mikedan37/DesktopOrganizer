@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		90F284522E3ED73B00F61D57 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 90F284512E3ED73B00F61D57 /* Sparkle */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		90F284222E3DE30C00F61D57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F284522E3ED73B00F61D57 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = DesktopOrganizer;
 			packageProductDependencies = (
+				90F284512E3ED73B00F61D57 /* Sparkle */,
 			);
 			productName = DesktopOrganizer;
 			productReference = 90F284132E3DE30A00F61D57 /* DesktopOrganizer.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 90F2840A2E3DE30A00F61D57;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				90F284502E3ED73B00F61D57 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 90F284142E3DE30A00F61D57 /* Products */;
 			projectDirPath = "";
@@ -398,7 +407,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4FN6U9B2Q9;
+				DEVELOPMENT_TEAM = M7PB4PDJAS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -425,7 +434,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4FN6U9B2Q9;
+				DEVELOPMENT_TEAM = M7PB4PDJAS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -551,6 +560,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90F284502E3ED73B00F61D57 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90F284512E3ED73B00F61D57 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90F284502E3ED73B00F61D57 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90F2840B2E3DE30A00F61D57 /* Project object */;
 }
