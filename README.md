@@ -14,20 +14,6 @@ Organize your macOS Desktop like a pro — AI-powered cleanup, OCR screenshot re
   <img src="https://img.shields.io/github/last-commit/Mikedan37/DesktopOrganizer?color=brightgreen" />
 </p>
 
----
-
-## 📚 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Example Report](#example-report)
-- [Roadmap](#roadmap)
-- [License](#license)
-
----
-
 ## 🔍 Overview
 **DesktopOrganizer** is a macOS utility built with **Swift + AppKit** that uses **AI OCR**, multithreading, and automation to keep your desktop spotless.  
 It renames screenshots intelligently, organizes files by type, and generates detailed cleanup reports with clutter metrics.
