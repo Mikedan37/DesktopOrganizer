@@ -10,10 +10,14 @@ import SwiftUI
 @main
 struct DesktopOrganizerApp: App {
     @State private var fileCount = OrganizerService.desktopFileCount()
+    @State private var showPreferences = false
     
     var body: some Scene {
         MenuBarExtra {
-            MenuContentView(onRefresh: updateBadge)
+            MenuContentView(
+                onRefresh: updateBadge,
+                onPreferences: { showPreferences.toggle() }
+            )
         } label: {
             ZStack(alignment: .topTrailing) {
                 Image(systemName: "rectangle.stack")
@@ -31,6 +35,22 @@ struct DesktopOrganizerApp: App {
             .frame(width: 24, height: 24)
         }
         .menuBarExtraStyle(.window)
+
+        // Preferences Window Scene
+        Window("Preferences", id: "preferences") {
+            PreferencesView()
+                .frame(width: 420, height: 280)
+        }
+        .defaultPosition(.center)
+
+        // Timeline Window Scene
+        Window("Timeline", id: "timeline") {
+            TimelineView() // Replace with your real timeline view when ready
+                .frame(width: 700, height: 500)
+        }
+        .defaultPosition(.center)
+        .windowResizability(.contentSize)
+        .windowStyle(.hiddenTitleBar)
     }
     
     func updateBadge() {
