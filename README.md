@@ -13,36 +13,30 @@ Organize your macOS Desktop like a pro — AI-powered cleanup, OCR screenshot re
   <img src="https://img.shields.io/github/license/Mikedan37/DesktopOrganizer" />
   <img src="https://img.shields.io/github/last-commit/Mikedan37/DesktopOrganizer?color=brightgreen" />
 </p>
-⸻
 
 DesktopOrganizer
 
 TimeTravel your macOS Desktop. Snapshots. Timeline. Restore in one click.
 
-⸻
 
 🔥 What is DesktopOrganizer?
 
-DesktopOrganizer is a macOS utility that combines desktop versioning, AI-powered cleanup, and modern UI.
-Think Time Machine, but designed for your Desktop — lightweight, fast, and stunning.
+DesktopOrganizer is a macOS utility that brings desktop versioning, AI-powered cleanup, and modern UI to your Mac.
+Think Time Machine for your Desktop — but lightweight, fast, and stunning.
 
 ✔ Hourly auto snapshots with a background daemon
-✔ Interactive timeline slider to browse desktop history
-✔ 3D flipping previews for past states
+✔ Interactive timeline slider to scroll through history
+✔ 3D flipping previews for past desktop states
 ✔ One-click restore to any snapshot
 
-⸻
-
 ✨ Key Features
-	•	✅ Desktop Timeline → Navigate history with an animated slider
-	•	✅ 3D Flip Previews → Click a snapshot card to reveal the full desktop view
-	•	✅ Auto Backup Daemon → Runs in the background and captures hourly snapshots
-	•	✅ Instant Restore → Brings your Desktop back with Finder automation
-	•	✅ FAB Quick Actions → Export, duplicate, or delete snapshots in style
-	•	✅ AI Cleanup → OCR screenshot renaming & smart file categorization
-
-⸻
-
+	•	✅ Desktop Timeline → Navigate history with a smooth animated slider
+	•	✅ 3D Flip Previews → Click a snapshot card to reveal actual screenshot
+	•	✅ Auto Backup Daemon → Runs in background and captures hourly snapshots
+	•	✅ Instant Restore → Brings your Desktop back using Finder automation
+	•	✅ FAB Quick Actions → Export, duplicate, or delete snapshots
+	•	✅ AI-Powered Cleanup → OCR screenshot renaming & smart file categorization
+ 
 🛠 Tech Stack
 
 Feature	Implementation
@@ -52,15 +46,12 @@ Restore Engine	AppleScript + FileManager
 OCR Renaming	Vision Framework
 Auto Updates	Sparkle
 
-
-⸻
-
 ⚡ Installation
 
 # Clone the repository
 git clone https://github.com/Mikedan37/DesktopOrganizer.git
 
-# Open the project
+# Open in Xcode
 open DesktopOrganizer.xcodeproj
 
 Requirements:
@@ -68,20 +59,21 @@ Requirements:
 	•	Xcode 15+
 	•	Swift 5.10
 
-⸻
-
 ▶ Quick Start
-	1.	Run the App
+
+1. Run the App
+
 Launch from Xcode and explore the Timeline UI.
-	2.	Enable Auto Snapshot Daemon
+
+2. Enable Auto Snapshot Daemon
 
 cp com.desktoporganizer.daemon.plist ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/com.desktoporganizer.daemon.plist
 
-	3.	Restore Any Snapshot
+3. Restore Any Snapshot
+
 Flip a card → Hit Restore → Done.
 
-⸻
 
 📊 Example Snapshot Report
 
@@ -94,17 +86,14 @@ Storage Used: 1.4 GB
 Current Clutter Score: 21/100 [█████████░░░░░░░░]
 
 
-⸻
-
 🗺 Roadmap
 	•	iCloud sync for snapshots
 	•	Diff view to compare two desktop states
 	•	ML-based clutter predictions
 
-⸻
 
 📜 License
 
 MIT License © 2025 Michael Danylchuk
 
-⸻
+
