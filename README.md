@@ -14,67 +14,111 @@ Organize your macOS Desktop like a pro — AI-powered cleanup, OCR screenshot re
   <img src="https://img.shields.io/github/last-commit/Mikedan37/DesktopOrganizer?color=brightgreen" />
 </p>
 
-## 🔍 Overview
-**DesktopOrganizer** is a macOS utility built with **Swift + AppKit** that uses **AI OCR**, multithreading, and automation to keep your desktop spotless.  
-It renames screenshots intelligently, organizes files by type, and generates detailed cleanup reports with clutter metrics.
+⸻
 
----
+DesktopOrganizer
 
-## 🚀 Features
-- ✅ **Smart File Categorization** → Documents, Images, Videos, Archives, Code, and more.
-- ✅ **AI-Powered OCR Screenshot Renaming** (Vision Framework).
-- ✅ **Instant Undo** with conflict-safe handling.
-- ✅ **Multi-threaded Performance** for blazing fast cleanup.
-- ✅ **Clutter Score & Historical Stats** for gamification.
-- ✅ **Sparkle OTA Updates** for seamless upgrades.
-- ✅ **Custom Desktop Layout Automation** using AppleScript.
+TimeTravel your macOS Desktop. Snapshots. Timeline. Restore in one click.
 
----
 
-## 🛠 Tech Stack
-| Component    | Technology                     |
-|-------------|--------------------------------|
-| Language    | Swift 5.10                    |
-| macOS UI    | AppKit                        |
-| AI / OCR    | Vision Framework              |
-| Auto Update | Sparkle                       |
-| Concurrency | GCD (Grand Central Dispatch) |
+⸻
 
----
+🔥 What is DesktopOrganizer?
 
-## 📦 Installation
-```bash
-# Clone the repository
+A macOS utility that combines desktop versioning, AI-powered cleanup, and beautiful UI.
+Think Time Machine, but made for your Desktop — lightweight, fast, and stunning.
+
+✔ Hourly auto snapshots with a background daemon.
+✔ An interactive timeline slider to scroll through history.
+✔ 3D flipping previews of past desktop states.
+✔ One-click restore to any point in time.
+
+⸻
+
+✨ Key Features
+
+✅ Desktop Timeline → Navigate history with a smooth animated slider.
+✅ 3D Flip Previews → Click a snapshot card to flip between details and actual screenshot.
+✅ Auto Backup Daemon → Runs in the background; takes hourly snapshots with zero lag.
+✅ Instant Restore → Uses AppleScript automation to bring your Desktop back in seconds.
+✅ FAB Quick Actions → Sleek floating action button with export, duplicate, delete.
+✅ AI-Powered Cleanup → OCR screenshot renaming & smart file categorization.
+
+⸻
+
+🎥 Demo
+
+Timeline Slider	Snapshot Flip	Restore in Action
+		
+
+(Drag timeline → Flip snapshot → Restore instantly.)
+
+⸻
+
+🛠 Tech Stack
+
+Feature	Implementation
+UI	SwiftUI + AppKit
+Auto Snapshot	LaunchAgent + Swift
+Restore Engine	AppleScript + FileManager
+OCR Renaming	Vision Framework
+Updates	Sparkle
+
+
+⸻
+
+⚡ Installation
+
+# Clone the repo
 git clone https://github.com/Mikedan37/DesktopOrganizer.git
 
 # Open in Xcode
 open DesktopOrganizer.xcodeproj
 
-# Build & Run (macOS 15+)
-▶ Usage
-	•	Click Clean Desktop → Auto-organizes files into ~/Desktop/Organized/.
-	•	Screenshots renamed using AI OCR (or fallback timestamps).
-	•	Generate DesktopReport.txt with cleanup metrics.
-	•	Undo last action anytime.
+Requirements:
+	•	macOS 15+
+	•	Xcode 15+
+	•	Swift 5.10
 
-📊 Example Report
-====================================
-      🖥  Desktop Clean Report 🧹
-====================================
-Date: 2025-08-02
-Impact:
-✔ Reduced clutter by 85%
-✔ Freed up 1.3 GB
-✔ Moved 147 files to Organized
+⸻
 
-Clutter Score: 18/100 [██████████░░░░░░░░░░] (18% clean)
+▶ Quick Start
+
+1. Run the App
+	•	Launch from Xcode and explore the Timeline UI.
+
+2. Enable Auto Snapshot Daemon
+
+cp com.desktoporganizer.daemon.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.desktoporganizer.daemon.plist
+
+3. Restore Any Snapshot
+	•	Flip a card → Hit Restore → Done.
+
+⸻
+
+📊 Example Snapshot Report
+
+====================================
+     🖥  Desktop Snapshot Report
+====================================
+Date: 2025-08-03
+Snapshots Stored: 72
+Storage Used: 1.4 GB
+Current Clutter Score: 21/100 [█████████░░░░░░░░]
+
+
+⸻
 
 🗺 Roadmap
-	•	Context-aware AI categorization
-	•	Menu bar quick actions
-	•	iCloud auto-sync support
+	•	iCloud sync for snapshots.
+	•	Diff view to compare two snapshots visually.
+	•	ML-based clutter predictions.
+
+⸻
 
 📜 License
 
 MIT License © 2025 Michael Danylchuk
 
+⸻
