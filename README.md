@@ -21,7 +21,7 @@ _TimeTravel your macOS Desktop. Snapshots. Timeline. Restore in one click._
 
 ## 🔥 **What is DesktopOrganizer?**
 DesktopOrganizer is a **macOS utility** that brings **desktop versioning**, **AI-powered cleanup**, and **beautiful UI** to your Mac.  
-Think **Time Machine for your Desktop** — but lightweight, fast, and stunning.
+Think lightweight, fast, and stunning.
 
 ✔ Hourly **auto snapshots** with a background daemon  
 ✔ Interactive **timeline slider** to scroll through history  
